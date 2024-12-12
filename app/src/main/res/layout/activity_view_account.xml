@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ViewAccountActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_bg"
+        android:backgroundTint="@color/admin_color"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:text="View Account"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="User ID:"/>
+            <EditText
+                android:id="@+id/dateEditText1"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/input_box_bg"
+                android:inputType="number"
+                android:text="0100"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Title:"/>
+            <EditText
+                android:id="@+id/halfEndEditText"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/input_box_bg"
+                android:inputType="text"
+                android:text="MS."/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Last Name:"/>
+            <EditText
+                android:id="@+id/dateEditText2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/input_box_bg"
+                android:inputType="text"
+                android:text="CHAN"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="First Name:"/>
+            <EditText
+                android:id="@+id/halfStartEditText"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/input_box_bg"
+                android:inputType="text"
+                android:text="MAN MAN"/>
+        </LinearLayout>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Phone No.:"/>
+        <EditText
+            android:id="@+id/leaveDaysEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/input_box_bg"
+            android:inputType="text"
+            android:text="(852) 9876 5432"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Email:"/>
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/input_box_bg"
+            android:inputType="textEmailAddress"
+            android:text="MM.CHAN@OUTLOOK.COM"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Address:"/>
+        <EditText
+            android:id="@+id/addressEditText1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/input_box_bg"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:text="Room A, 12/F, ABC Building,"/>
+        <EditText
+            android:id="@+id/addressEditText2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/input_box_bg"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:text="Wan Chai, Hong Kong"/>
+        <EditText
+            android:id="@+id/addressEditText3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/input_box_bg"
+            android:layout_marginBottom="10dp"
+            android:inputType="text" />
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/light_blue"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Back"/>
+    </GridLayout>
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".AdminMenuActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_bg"
+        android:backgroundTint="@color/admin_color"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:text="Leave Status"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/red"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:shrinkColumns="0">
+            <TableLayout
+                android:id="@+id/pendingTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:shrinkColumns="0">
+
+                <TableRow>
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="No. "/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="Leave Type "/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="Approval Date "/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="0100 "/>
+                    <TextView
+                        android:text="Annual Leave "/>
+                    <TextView
+                        android:text="30/11/2024 "/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2001 "/>
+                    <TextView
+                        android:text="Sick Leave "/>
+                    <TextView
+                        android:text="02/12/2024 "/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="0099 "/>
+                    <TextView
+                        android:text="Annual Leave "/>
+                    <TextView
+                        android:text="05/12/2024 "/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="0019 "/>
+                    <TextView
+                        android:text="Annual Leave "/>
+                    <TextView
+                        android:text="22/06/2024 "/>
+                </TableRow>
+            </TableLayout>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/blue"/>
+
+        <TableLayout
+            android:id="@+id/completedTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:shrinkColumns="0">
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:text="No. "/>
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Leave Type "/>
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Approval Date "/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="0022 "/>
+                <TextView
+                    android:text="Annual Leave "/>
+                <TextView
+                    android:text="7/12/2024 "/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="0021 "/>
+                <TextView
+                    android:text="Annual Leave "/>
+                <TextView
+                    android:text="20/11/2024 "/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="0020 "/>
+                <TextView
+                    android:text="Annual Leave "/>
+                <TextView
+                    android:text="10/10/2024 "/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="0019 "/>
+                <TextView
+                    android:text="Annual Leave "/>
+                <TextView
+                    android:text="22/06/2024 "/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/light_blue"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Back"/>
+
+</LinearLayout>

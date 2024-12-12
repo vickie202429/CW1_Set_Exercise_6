@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="~ WELCOME ~"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="312dp"
+        android:layout_height="301dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/calendar"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <Button
+        android:id="@+id/employeeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:width="150dp"
+        android:backgroundTint="@color/employee_color"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:text="Employee" />
+
+    <Button
+        android:id="@+id/adminButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:width="150dp"
+        android:drawableLeft="@drawable/baseline_people_24"
+        android:text="Admin"
+        android:backgroundTint="@color/admin_color" />
+
+</LinearLayout>
